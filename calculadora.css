@@ -21,7 +21,9 @@ button{
 #display{
     width: 315px;
     height: 75px;
-    font-size: 25px;
+    font-size: 40px;
+    text-align: right;
+    
 }
 /* Definiendo clase para alinear los elementos */
 .contenedor{
