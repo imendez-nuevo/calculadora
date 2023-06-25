@@ -4,11 +4,15 @@ let primerNumero , segundoNumero , tipoOperacion , resultado;
 
 //Definimos una fución para limpiar la pantalla
 function fnLimpiarPantalla(){
-    display.value = " "
+    display.value = (" ");
 }
 //definimos una funcion para marcar los números en la pantalla desde los botones
 function fnMarcarNumero(n){
-    display.value = display.value + n;
+    if(!(display.value.includes("."))){
+        display.value = display.value + n;
+    }else if(n != "."){
+        display.value = display.value + n;
+    }
 }
 //Definimos una función para recibir la operación
 function fnOperacion(op){
